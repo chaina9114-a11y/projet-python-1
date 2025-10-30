@@ -1,5 +1,4 @@
 # Projet-python-1
-On a crée un journal de trading. 
 
 # Trading Journal 
 
