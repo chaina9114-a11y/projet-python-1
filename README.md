@@ -1,5 +1,5 @@
 # Projet-python-1
-On a crée un trading journal avec streamlit. 
+On a crée un trading journal. 
 
 # Trading Journal 
 
