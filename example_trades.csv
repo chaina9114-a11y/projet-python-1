@@ -1,0 +1,11 @@
+id,date,time,session,ticker,side,quantity,entry,exit,strategy,notes,result_usd
+ex1,2025-10-21,09:12,London,DJ30,Long,0.1,39580.0,39640.0,,Break above opening range,180
+ex2,2025-10-21,15:37,NY,XAUUSD,Short,0.08,2418.5,2416.3,,Clean H4 rejection,176
+ex3,2025-10-22,10:05,London,XAUUSD,Long,0.1,2409.2,2406.9,,"Late entry, wick hit SL",-230
+ex4,2025-10-22,16:22,NY,DJ30,Short,0.12,39710.0,39660.0,,"Range re-entry, mid exit",250
+ex5,2025-10-23,08:58,Asia,XAUUSD,Long,0.09,2402.4,2403.1,,Early scalp,63
+ex6,2025-10-23,14:11,London,DJ30,Long,0.11,39610.0,39570.0,,Forced setup,-220
+ex7,2025-10-24,15:03,NY,XAUUSD,Short,0.1,2426.8,2424.1,,"Failed buyers, continuation",210
+ex8,2025-10-25,10:47,London,DJ30,Short,0.08,39850.0,39865.0,,"Tight SL, wick out",-120
+ex9,2025-10-27,13:29,London,XAUUSD,Long,0.12,2410.7,2413.1,,Multi-timeframe confluence,288
+ex10,2025-10-28,16:41,NY,DJ30,Long,0.1,39690.0,39735.0,,"Break + retest, trend follow",220

@@ -1,0 +1,5 @@
+date,mood,confidence,day_type,day_result,day_pl,sessions,day_notes,lesson,checklist_ok,screenshot_path
+2025-10-21,🙂,70,Green,Positive (+),356,"London,NY",Good read on DJ30 & Gold,M15 + volume confirmation saves from fakeouts,True,
+2025-10-22,😕,55,Red,Negative (-),-54,"London,NY",Loss on Gold wick; partial recover DJ30,"Don't enter on wick, wait close",True,
+2025-10-23,😐,65,Flat,No trade,0,London,"Unclear market, no trades",No setup = no trade. Discipline > action,True,
+2025-10-27,😄,80,Green,Positive (+),288,London,"Clean Gold confluence, avoided news",Confluence + risk mgmt around news = edge,True,
