@@ -84,6 +84,8 @@ Les données restent sur ton ordinateur et aucune connexion externe n’est util
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](<STREAMLIT_SHARE_URL>)
+
 
 
 
