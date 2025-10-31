@@ -1,9 +1,14 @@
-# Projet-python-1
 
 # Trading Journal 
 
 Notre application est une webapp Streamlit qui à pour but d'aider les traders à suivre leurs trades, leurs notes quotidiennes ainsi que leurs progression dans le temps.
 
+## Sommaire
+- [Objectif](#objectif)
+- [Aperçu](#aperçu)
+- [Structure](#structure)
+- [Interface](#interface)
+- [Badges](#badges)
 
 ## 🎯 Objectif
 
@@ -14,7 +19,7 @@ Notre application est une webapp Streamlit qui à pour but d'aider les traders �
 
 Le tout, sans base de données : tout est stocké en **CSV**, donc lisible et portable.
 
-## Aperçu
+## 🌟 Aperçu
 
 Le projet Trading Journal est une webapp Streamlit qui permet de suivre vos trades et vos notes quotidiennes de manière simple et efficace.
 
@@ -31,7 +36,7 @@ Performance : uniquement la colonne result_usd est utilisée pour calculer les s
 Les colonnes id et strategy sont masquées dans l’interface mais présentes dans les CSV pour compatibilité
 
 
-## Structure & Code
+## 🧠 Structure & Code
 
 Le projet tient dans un seul fichier : `app.py`, avec une structure simple et robuste.
 
@@ -78,5 +83,7 @@ Les données restent sur ton ordinateur et aucune connexion externe n’est util
 ## Badges
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
+
+
 
 
