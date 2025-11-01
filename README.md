@@ -115,13 +115,14 @@ L’application s’ouvre automatiquement dans le navigateur
 
 Dure environ : 4:45 minutes 
 
-Contenue : problématique création application, démonstration des fonctionnalités, explication du code. 
+Contenu : problématique création application, démonstration des fonctionnalités, explication du code. 
 
 
 Lien Google drive : https://drive.google.com/file/d/1Wo_1pjfd2DDq0C1r8kgTnwjeSYEQrZ-k/view?usp=drivesdk
+
 ##  Auteur 
 
-Nom : Chaina spusteck & Leslie Tagne
+Nom : Chaina Spusteck & Leslie Tagne
 
 Groupe : Projet WebApp Predictive- Data-Sorbonne 
 
