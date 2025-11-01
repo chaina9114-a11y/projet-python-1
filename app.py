@@ -364,4 +364,3 @@ else:
         )
 
 st.caption("Result($) is your manual P/L · Equity = cumulative Result($) over time · Weekly/Monthly = period sums · data in data/")
-
