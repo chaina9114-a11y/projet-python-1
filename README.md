@@ -1,91 +1,102 @@
+# 🗒️ Trading Journal — Projet WebApp (Sorbonne)
 
-# Trading Journal 
+## 🔗 [🎯 Objectif](#-objectifs)
+Ce projet a été réalisé dans le cadre du module **WebApp Predictive** à la **Sorbonne Université**.  
+L’objectif est de créer une **application web interactive** avec **Streamlit**, permettant à l’utilisateur de **suivre ses trades**, **écrire des notes quotidiennes** et **visualiser sa progression** à travers des statistiques et une courbe d’équité.
 
-Notre application est une webapp Streamlit qui à pour but d'aider les traders à suivre leurs trades, leurs notes quotidiennes ainsi que leurs progression dans le temps.
+---
 
-## Sommaire
-- [Objectif](#objectif)
-- [Aperçu](#aperçu)
-- [Structure](#structure)
-- [Interface](#interface)
-- [Badges](#badges)
+## 🔗 [✨ Fonctionnalités principales](#-fonctionnalités-principales)
 
-## 🎯 Objectif
+- **Quick Trade Entry** : ajout rapide d’un trade (date, heure, session, paire, sens, prix d’entrée/sortie, lot size, notes, résultat en $).  
+- **Daily Notes** : humeur, résultat de la journée et leçon clé.  
+- **Édition / Suppression** : modification directe dans les tableaux.  
+- **Progress Page** :
+  - Statistiques globales : nombre de trades, win rate, total P/L ($).  
+  - Courbe d’équité (résultats cumulés dans le temps).  
+  - Résultats hebdomadaires et mensuels sous forme de graphiques.  
+- **Sauvegarde & restauration automatiques** : backup avant chaque reset et restauration disponible depuis l’interface.
 
-**Trading Journal** est une application Python simple et rapide pour :
-- ✏️ **Saisir ses trades** (date, heure, paire, résultat, notes)
-- 🧠 **Écrire ses notes quotidiennes**
-- 📊 **Visualiser ses performances** (KPIs, courbe de capital, graphiques hebdomadaires/mensuels)
+---
 
-Le tout, sans base de données : tout est stocké en **CSV**, donc lisible et portable.
+## 🔗 [🚀 Installation et exécution](#-installation-et-exécution)
 
-## 🌟 Aperçu
+### 🧩 Étapes d’installation
 
-Le projet Trading Journal est une webapp Streamlit qui permet de suivre vos trades et vos notes quotidiennes de manière simple et efficace.
+```bash
+# 1️⃣ Cloner le dépôt
+git clone https://github.com/<votre_nom_utilisateur>/streamlit-trading-journal.git
+cd streamlit-trading-journal
 
-Points clés :
+# 2️⃣ (Optionnel) Créer un environnement virtuel
+python -m venv .venv
+source .venv/bin/activate   # macOS / Linux
+# ou
+.\.venv\Scripts\activate    # Windows
 
-2 fichiers CSV dans /data : trades.csv (tous les trades) et daily.csv (notes quotidiennes)
-
-Page “Journal” : saisie rapide des trades, notes du jour, édition et suppression des entrées
-
-Page “Progress” : aperçu global avec KPIs, equity curve animée (~2 secondes), totaux hebdomadaires et mensuels
-
-Performance : uniquement la colonne result_usd est utilisée pour calculer les stats et la courbe d’equity
-
-Les colonnes id et strategy sont masquées dans l’interface mais présentes dans les CSV pour compatibilité
-
-
-## 🧠 Structure & Code
-
-Le projet tient dans un seul fichier : `app.py`, avec une structure simple et robuste.
-
-### 🔹 Interface Streamlit
-- **Sidebar** : navigation entre *Journal* et *Progress*, + bouton “Reset data”  
-- **Page Journal** : saisie rapide avec formulaire, édition dans un tableau  
-- **Page Progress** : calcul automatique de la colonne `_pl_for_stats` et somme cumulée pour l’equity curve  
-
-
-# Installation
-
-### 1️⃣ Cloner le dépôt
-git clone https://github.com/chaina9114-a11y/projet-python-1
-
-### 2️⃣ Se déplacer dans le dossier du projet
-cd project-python-1
-
-### 4️⃣ Installer les dépendances
+# 3️⃣ Installer les dépendances
 pip install -r requirements.txt
 
-### 5️⃣ Lancer le projet
-python main.py
+# 4️⃣ Lancer l’application
+streamlit run app.py
 
-    
-## FAQ – Trading Journal
-
-#### 🐍 Faut-il installer Python pour utiliser l’application ?
-
-
-Oui, l’application nécessite Python.
-Installe également les dépendances avec : pip install -r requirements.txt
-
-
-#### 🚀 Comment lancer l’application ?
-
-Dans le dossier du projet : streamlit run app.py
-
-#### 🔒 Est-ce sécurisé ?
-
+L’application s’ouvre automatiquement dans votre navigateur 🌐
+Sinon, copiez le lien affiché dans le terminal (souvent http://localhost:8501).
 Le projet est 100% local.
 Les données restent sur ton ordinateur et aucune connexion externe n’est utilisée.
 
 
-## Badges
+### 🔗 🗂️ Structure du projet
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
+streamlit-trading-journal/
+│
+├── app.py                  # Script principal Streamlit
+├── requirements.txt        # Dépendances du projet
+├── README.md               # Documentation
+└── data/                   # Fichiers de données
+    ├── trades.csv          # Journal des trades
+    ├── daily.csv           # Notes quotidiennes
+    └── backups/            # Sauvegardes automatiques
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](<STREAMLIT_SHARE_URL>)
+🔗 💡 Utilisation rapide
 
+1. Onglet Journal → saisir un trade via Quick Trade Entry → Add trade.
+
+2. Ajouter une Daily Note (mood, résultat, leçon du jour).
+
+3. Onglet Progress → visualiser :
+
+    la courbe d’équité (cumul des résultats),
+
+    les résultats hebdomadaires et mensuels,
+
+    les indicateurs clés (nombre de trades, win rate, total P/L).
+
+4. Dans la sidebar, section Data Safety :
+
+    🛟 Backup now → créer une sauvegarde,
+
+    ↩️ Restore last backup → restaurer la dernière version,
+
+    🗑️ Reset ALL data (with backup) → réinitialiser après sauvegarde.
+
+🔗 🧠 Stack technique
+
+    Python 3.11+
+
+    Streamlit — Interface web interactive
+
+    Pandas — Manipulation et stockage des données
+
+    Altair — Visualisation des performances
+
+🔗 👥 Auteurs
+
+Chaina SPUSTECK et Leslie TAGNE
+
+Projet WebApp Predictive — Sorbonne Université
+
+Année universitaire 2025-2026
 
 
 
