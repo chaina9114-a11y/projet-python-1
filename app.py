@@ -1,4 +1,4 @@
-# app.py — Trading Journal (version simplifiée, même features)
+# app.py — Trading Journal
 # -----------------------------------------------------------
 # Points clés:
 # - 2 CSV dans /data : trades.csv et daily.csv
